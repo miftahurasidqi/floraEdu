@@ -1,3 +1,4 @@
+import Footer from "../footer";
 import NavAdmin from "../navAdmin";
 
 export default function Profile() {
@@ -19,6 +20,7 @@ export default function Profile() {
           </div>
         </div>
       </div>
+      <Footer padding={true} />
     </div>
   );
 }

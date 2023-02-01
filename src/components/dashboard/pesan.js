@@ -1,3 +1,4 @@
+import Footer from "../footer";
 import NavAdmin from "../navAdmin";
 import ListPesan from "./listPesan";
 
@@ -35,6 +36,7 @@ export default function Pesan() {
           </div>
         </div>
       </div>
+      <Footer padding={true} />
     </div>
   );
 }

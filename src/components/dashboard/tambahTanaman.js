@@ -1,6 +1,7 @@
 import img2 from "../../images/images.png";
 import NavAdmin from "../navAdmin";
 import moveTo from "../moveTo";
+import Footer from "../footer";
 
 // import { IonIcon } from "@ionic/react";
 // import { add } from "ionicons/icons";
@@ -65,6 +66,7 @@ export default function TamabahTanaman() {
           </div>
         </div>
       </div>
+      <Footer padding={true} />
     </div>
   );
 }

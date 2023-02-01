@@ -2,6 +2,7 @@ import NavAdmin from "../navAdmin";
 import profil from "../../images/profile.png";
 import { useParams } from "react-router-dom";
 import moveTo from "../moveTo";
+import Footer from "../footer";
 
 export default function LihatPesan() {
   const params = useParams();
@@ -73,6 +74,7 @@ export default function LihatPesan() {
           </div>
         </div>
       </div>
+      <Footer padding={true} />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import NavAdmin from "../navAdmin";
 import moveTo from "../moveTo";
+import Footer from "../footer";
 
 export default function TambahAdmin() {
   const Nav = [
@@ -52,7 +53,8 @@ export default function TambahAdmin() {
           </div>
         </form>
       </div>
-      <main className="flex h-screen justify-center items-center p-3 bg-teal-200"></main>
+      {/* <main className="flex h-screen justify-center items-center p-3 bg-teal-200"></main> */}
+      <Footer padding={true} />
     </div>
   );
 }

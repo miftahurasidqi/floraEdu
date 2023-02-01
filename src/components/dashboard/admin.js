@@ -1,6 +1,7 @@
 import NavAdmin from "../navAdmin";
 import moveTo from "../moveTo";
 import ListAdmin from "../listAdmin";
+import Footer from "../footer";
 
 export default function Admin() {
   const Nav = [
@@ -66,6 +67,7 @@ export default function Admin() {
           </div>
         </div>
       </div>
+      <Footer padding={true} />
     </div>
   );
 }

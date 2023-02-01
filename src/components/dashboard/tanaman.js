@@ -5,6 +5,7 @@ import img4 from "../../images/rafiqmia-ihsanuddin-qqbmMh57u5k-unsplash.jpg";
 import NavAdmin from "../navAdmin";
 import moveTo from "../moveTo";
 import ListTanaman from "../listTanaman";
+import Footer from "../footer";
 
 export default function Tanaman() {
   const Nav = [
@@ -49,6 +50,7 @@ export default function Tanaman() {
           </div>
         </div>
       </div>
+      <Footer padding={true} />
     </div>
   );
 }
