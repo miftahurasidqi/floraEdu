@@ -16,24 +16,20 @@ export default function Colections() {
     { name: "Contact", link: "/contact", on: false },
   ];
 
-  const descImg = {
-    image1: [
-      "alea Film",
-      "https://images.unsplash.com/photo-1659851854011-30f7e9893289?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80",
-      "https://unsplash.com/s/photos/hutan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
-    ],
-    image2: [
-      "Josua Natanael",
-      "https://unsplash.com/@jonatanael20?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
-      "https://unsplash.com/s/photos/hutan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
-    ],
-    image3: ["Ma Ti", "https://unsplash.com/de/@masplashti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText", "https://unsplash.com/s/photos/hutan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"],
-    image4: [
-      "Rafiqmia Ihsanuddin",
-      "https://unsplash.com/@rafiqmiaaz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
-      "https://unsplash.com/s/photos/hutan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
-    ],
-  };
+  const tb_tanaman = [
+    { id: 1, img: img1, nama: "tanaman 1", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
+    { id: 2, img: img2, nama: "tanaman 2", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
+    { id: 3, img: img3, nama: "tanaman 3", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
+    { id: 4, img: img4, nama: "tanaman 4", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
+  ];
+
+  // const descImg = {
+  //   image1: [
+  //     "alea Film",
+  //     "https://images.unsplash.com/photo-1659851854011-30f7e9893289?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80",
+  //     "https://unsplash.com/s/photos/hutan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+  //   ],
+  // };
 
   return (
     <div>
@@ -44,21 +40,21 @@ export default function Colections() {
             <div className="w-full p-2 pl-6 mb-5">
               <h2 className="text-xl lg:text-3xl">Daftar Jenis Flora</h2>
             </div>
-            <Card image={img1} name="Tanaman 1" By={descImg.image1} />
-            <Card image={img2} name="Tanaman 2" By={descImg.image2} />
-            <Card image={img3} name="Tanaman 3" By={descImg.image3} />
-            <Card image={img4} name="Tanaman 4" By={descImg.image4} />
-            <Card image={img1} name="Tanaman 5" By={descImg.image1} />
-            <Card image={img2} name="Tanaman 6" By={descImg.image2} />
-            <Card image={img3} name="Tanaman 7" By={descImg.image3} />
-            <Card image={img4} name="Tanaman 8" By={descImg.image4} />
-            <Card image={img1} name="Tanaman 9" By={descImg.image1} />
-            <Card image={img2} name="Tanaman 10" By={descImg.image2} />
-            <Card image={img3} name="Tanaman 11" By={descImg.image3} />
-            <Card image={img4} name="Tanaman 12" By={descImg.image4} />
+            {/* <Card image={img1} name="Tanaman 1" By={descImg.image1} /> */}
+            <Card list={tb_tanaman[0]} />
+            <Card list={tb_tanaman[1]} />
+            <Card list={tb_tanaman[2]} />
+            <Card list={tb_tanaman[3]} />
+            <Card list={tb_tanaman[0]} />
+            <Card list={tb_tanaman[1]} />
+            <Card list={tb_tanaman[2]} />
+            <Card list={tb_tanaman[3]} />
+            <Card list={tb_tanaman[0]} />
+            <Card list={tb_tanaman[1]} />
+            <Card list={tb_tanaman[2]} />
+            <Card list={tb_tanaman[3]} />
           </div>
         </section>
-        {/* Photo by <a href="https://unsplash.com/de/@masplashti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ma Ti</a> on <a href="https://unsplash.com/s/photos/hutan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */}
       </main>
       <Footer />
     </div>

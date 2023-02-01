@@ -1,7 +1,5 @@
 import NavAdmin from "../navAdmin";
-import profil from "../../images/profile.png";
-import { IonIcon } from "@ionic/react";
-import { trash } from "ionicons/icons";
+import ListPesan from "./listPesan";
 
 export default function Pesan() {
   const Nav = [
@@ -12,10 +10,10 @@ export default function Pesan() {
   ];
 
   const tb_pesan = [
-    { nama: "tanaman 1", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
-    { nama: "tanaman 2", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
-    { nama: "tanaman 3", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
-    { nama: "tanaman 4", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
+    { id: 1, nama: "User 1", email: "nama@gmail.com", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
+    { id: 2, nama: "User 2", email: "nama@gmail.com", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
+    { id: 3, nama: "User 3", email: "nama@gmail.com", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
+    { id: 4, nama: "User 4", email: "nama@gmail.com", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
   ];
 
   return (
@@ -30,58 +28,10 @@ export default function Pesan() {
           </div>
 
           <div class="w-full border border-gray-200">
-            <div class=" flex gap-3 hover:bg-gray-100 transition-colors border-y border-gray-200">
-              <div class="py-1 pl-6">
-                <img src={profil} alt="" class="w-16 h-16 rounded-full object-cover object-top border border-gray-200" />
-              </div>
-
-              <div class="grow flex flex-col justify-center gap-2">
-                <h1 class="text-xl lg:text-3xl font-semibold text-gray-900">{tb_pesan[0].nama}</h1>
-                <p class="font-medium text-gray-700 overflow-hidden">{tb_pesan[0].deskripsi}</p>
-              </div>
-              <div class="flex items-center mr-6">
-                <IonIcon icon={trash} size="medium"></IonIcon>
-              </div>
-            </div>
-            <div class=" flex gap-3 hover:bg-gray-100 transition-colors border-y border-gray-200">
-              <div class="py-1 pl-6">
-                <img src={profil} alt="" class="w-16 h-16 rounded-full object-cover object-top border border-gray-200" />
-              </div>
-
-              <div class="grow flex flex-col justify-center gap-2">
-                <h1 class="text-xl lg:text-3xl font-semibold text-gray-900">{tb_pesan[0].nama}</h1>
-                <p class="font-medium text-gray-700 overflow-hidden">{tb_pesan[0].deskripsi}</p>
-              </div>
-              <div class="flex items-center mr-6">
-                <IonIcon icon={trash} size="medium"></IonIcon>
-              </div>
-            </div>
-            <div class=" flex gap-3 hover:bg-gray-100 transition-colors border-y border-gray-200">
-              <div class="py-1 pl-6">
-                <img src={profil} alt="" class="w-16 h-16 rounded-full object-cover object-top border border-gray-200" />
-              </div>
-
-              <div class="grow flex flex-col justify-center gap-2">
-                <h1 class="text-xl lg:text-3xl font-semibold text-gray-900">{tb_pesan[0].nama}</h1>
-                <p class="font-medium text-gray-700 overflow-hidden">{tb_pesan[0].deskripsi}</p>
-              </div>
-              <div class="flex items-center mr-6">
-                <IonIcon icon={trash} size="medium"></IonIcon>
-              </div>
-            </div>
-            <div class=" flex gap-3 hover:bg-gray-100 transition-colors border-y border-gray-200">
-              <div class="py-1 pl-6">
-                <img src={profil} alt="" class="w-16 h-16 rounded-full object-cover object-top border border-gray-200" />
-              </div>
-
-              <div class="grow flex flex-col justify-center gap-2">
-                <h1 class="text-xl lg:text-3xl font-semibold text-gray-900">{tb_pesan[0].nama}</h1>
-                <p class="font-medium text-gray-700 overflow-hidden">{tb_pesan[0].deskripsi}</p>
-              </div>
-              <div class="flex items-center mr-6">
-                <IonIcon icon={trash} size="medium"></IonIcon>
-              </div>
-            </div>
+            <ListPesan list={tb_pesan[0]} />
+            <ListPesan list={tb_pesan[1]} />
+            <ListPesan list={tb_pesan[2]} />
+            <ListPesan list={tb_pesan[3]} />
           </div>
         </div>
       </div>

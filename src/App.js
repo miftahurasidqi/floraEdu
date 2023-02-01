@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./components/home";
 import Colections from "./components/colections";
+import DetailColections from "./components/colections/detailColections";
 import AboutUs from "./components/aboutus";
 import Contact from "./components/contact";
 
@@ -14,6 +15,7 @@ import TambahAdmin from "./components/dashboard/tambahAdmin";
 import Profile from "./components/dashboard/profile";
 import Pesan from "./components/dashboard/pesan";
 import TanamanDetail from "./components/dashboard/tanamanDetail";
+import LihatPesan from "./components/dashboard/lihatPesan";
 
 // import Tanaman from "./components/tanaman";
 
@@ -24,6 +26,7 @@ function App() {
         {/* public routes */}
         <Route path="/" element={<Home />} />
         <Route path="colections" element={<Colections />} />
+        <Route path="colections/:tanamanId" element={<DetailColections />} />
         <Route path="aboutus" element={<AboutUs />} />
         <Route path="contact" element={<Contact />} />
 
@@ -31,6 +34,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="admin" element={<Admin />} />
         <Route path="pesan" element={<Pesan />} />
+        <Route path="pesan/:pesanId" element={<LihatPesan />} />
         <Route path="profile" element={<Profile />} />
         <Route path="tambahtanaman" element={<TamabahTanaman />} />
         <Route path="tambahadmin" element={<TambahAdmin />} />

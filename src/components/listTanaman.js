@@ -9,7 +9,7 @@ export default function ListTanaman({ list }) {
 
   return (
     <div onClick={() => moveTo(`/tanaman/${list.id}`)} className=" flex gap-3 hover:bg-gray-100 transition-colors border-y border-gray-200">
-      <div className="py-2 pl-10">
+      <div className="py-2 pl-2 lg:pl-10">
         <img src={list.img} alt="" className="w-40 aspect-[3/2] rounded-lg object-cover object-top border border-gray-200" />
       </div>
 

@@ -4,6 +4,7 @@ import img1 from "../../images/alea-film-oU-TSYlvkpY-unsplash.jpg";
 import img2 from "../../images/josua-natanael-AIoaTWtswkg-unsplash.jpg";
 import img3 from "../../images/ma-ti-wzeA3sU2hlo-unsplash.jpg";
 import img4 from "../../images/rafiqmia-ihsanuddin-qqbmMh57u5k-unsplash.jpg";
+import moveTo from "../moveTo";
 
 export default function TanamanDetail() {
   const Nav = [
@@ -56,6 +57,13 @@ export default function TanamanDetail() {
       <NavAdmin navList={Nav} />
       <div className="lg:pl-[268px] w-full pt-[10vh] lg:pt-0 min-h-screen font-sans justify-center items-center p-3">
         <div className="flex-1 pb-8">
+          <div className="flex justify-start pt-4">
+            <button onClick={() => moveTo("/tanaman")} className="p-1 border border-gray-200 text-gray-700 hover:text-gray-200 rounded-md">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+              </svg>
+            </button>
+          </div>
           <h1 className="text-gray-900 text-4xl mb-4 lg:pt-10 p-3" for="nama">
             {tb_tanaman[tanamanId].nama}
           </h1>

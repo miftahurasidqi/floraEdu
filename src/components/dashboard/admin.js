@@ -27,7 +27,7 @@ export default function Admin() {
             </div>
 
             <button
-              onClick={() => moveTo("/tambahtanaman")}
+              onClick={() => moveTo("/tambahadmin")}
               className="inline-flex gap-x-2 items-center py-1 px-3 lg:py-2.5 lg:px-6 text-white bg-teal-600 rounded-xl hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-1"
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5">

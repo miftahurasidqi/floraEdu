@@ -19,28 +19,28 @@ export default function NavAdmin({ navList }) {
       <div className="hidden lg:block">
         <ul className="flex flex-col gap-y-6 pt-16">
           <li>
-            <div onClick={() => moveTo(`${navList[0].link}`)} className="flex gap-x-4 items-center py-2 text-gray-800 hover:text-teal-600 group">
+            <div onClick={() => moveTo(`${navList[0].link}`)} className={`${navList[0].on ? "bg-teal-600 text-white" : "text-gray-900 hover:text-teal-900"} flex gap-x-4 items-center py-2 pl-3 rounded-md group`}>
               <span className="absolute w-1.5 h-8 bg-teal-600 rounded-r-full left-0 scale-y-0 -translate-x-full group-hover:scale-y-100 group-hover:translate-x-0 transition-transform ease-in-out" />
               <IonIcon icon={leaf} size="medium"></IonIcon>
               <span>{navList[0].name}</span>
             </div>
           </li>
           <li>
-            <div onClick={() => moveTo(`${navList[1].link}`)} className="flex gap-x-4 items-center py-2 text-gray-800 hover:text-teal-600 group">
+            <div onClick={() => moveTo(`${navList[1].link}`)} className={`${navList[1].on ? "bg-teal-600 text-white" : "text-gray-900 hover:text-teal-900"} flex gap-x-4 items-center py-2 pl-3 rounded-md group`}>
               <span className="absolute w-1.5 h-8 bg-teal-600 rounded-r-full left-0 scale-y-0 -translate-x-full group-hover:scale-y-100 group-hover:translate-x-0 transition-transform ease-in-out" />
               <IonIcon icon={mail} size="medium"></IonIcon>
               <span>{navList[1].name}</span>
             </div>
           </li>
           <li>
-            <div onClick={() => moveTo(`${navList[2].link}`)} className="flex gap-x-4 items-center py-2 text-gray-800 hover:text-teal-600 group">
+            <div onClick={() => moveTo(`${navList[2].link}`)} className={`${navList[2].on ? "bg-teal-600 text-white" : "text-gray-900 hover:text-teal-900"} flex gap-x-4 items-center py-2 pl-3 rounded-md group`}>
               <span className="absolute w-1.5 h-8 bg-teal-600 rounded-r-full left-0 scale-y-0 -translate-x-full group-hover:scale-y-100 group-hover:translate-x-0 transition-transform ease-in-out" />
               <IonIcon icon={people} size="medium"></IonIcon>
               <span>{navList[2].name}</span>
             </div>
           </li>
           <li>
-            <div onClick={() => moveTo(`${navList[3].link}`)} className="flex gap-x-4 items-center py-2 text-gray-800 hover:text-teal-600 group">
+            <div onClick={() => moveTo(`${navList[3].link}`)} className={`${navList[3].on ? "bg-teal-600 text-white" : "text-gray-900 hover:text-teal-900"} flex gap-x-4 items-center py-2 pl-3 rounded-md group`}>
               <span className="absolute w-1.5 h-8 bg-teal-600 rounded-r-full left-0 scale-y-0 -translate-x-full group-hover:scale-y-100 group-hover:translate-x-0 transition-transform ease-in-out" />
               <IonIcon icon={business} size="medium"></IonIcon>
               <span>{navList[3].name}</span>
